@@ -1,16 +1,26 @@
-## Hi there 👋
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=28&pause=1000&color=2F81F7&center=true&vCenter=true&width=600&lines=Hi!%2C+I+am+Eshaan." />
+</p>
 
-<!--
-**EshaanJaiswal/eshaanjaiswal** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+## 🎓 About Me
+- I’m a **2nd Year undergraduate in Computer Science and Engineering at IIT Gandhinagar**.
+- My interests include **Computer Vision, Deep Learning, and Machine Learning**, along with **Computer Architecture, Systems, and Algorithmic Research**.
+- I enjoy building strong theoretical foundations alongside practical experimentation.
 
-Here are some ideas to get you started:
+## 🔬 Research
+- Currently working under **Prof. Shanmuganathan** at the **CVIG Lab, IIT Gandhinagar**.
+- My research focuses on **First Order GAN-based models for animation**, exploring generative modeling techniques for motion and visual synthesis.
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+## 💼 Experience
+- **Delivery Data Scientist Intern** at **Turing**  
+  *May 2025 – July 2025*
+
+## 🧠 Skills & Interests
+- **Languages:** C, C++, Python, SQL, HTML, CSS, JavaScript, Verilog  
+- **Core Interests:** Computer Vision, Deep Learning, Machine Learning, Computer Architecture, Systems, Competitive Programming, Web Development  
+- **Foundations:** Data Structures & Algorithms
+
+## 🌐 Links
+- 🌐 Website: https://eshaanjaiswal.github.io  
+- 🐙 GitHub: https://github.com/EshaanJaiswal  
+- 🔗 LinkedIn: [![LinkedIn](https://img.shields.io/badge/LinkedIn-eshaanjaiswal-blue?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/eshaanjaiswal)
