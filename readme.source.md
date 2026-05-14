@@ -24,6 +24,7 @@
       borderRadius: 24,
       overflow: 'hidden',
       position: 'relative',
+      display: 'flex',
       background: 'linear-gradient(135deg, #0b1220 0%, #111827 100%)',
       fontFamily: 'Inter, Arial, sans-serif',
     }}
@@ -145,6 +146,7 @@
       borderRadius: 22,
       overflow: 'hidden',
       position: 'relative',
+      display: 'flex',
       background: '#0f172a',
       fontFamily: 'Inter, Arial, sans-serif',
     }}
