@@ -173,13 +173,13 @@
 
 ```aura width=160 height=44 link="https://eshaanjaiswal.github.io" inline align=center
 <SocialMediaButton
-  icon="https://raw.githubusercontent.com/collectioneur/collectioneur/main/icons/chrome-icon.svg"
+  icon="https://www.google.com/s2/favicons?domain=eshaanjaiswal.github.io&sz=64"
   text="Website"
   width={160}
   height={44}
   backgroundColor="#000000"
   textColor="#ffffff"
-  iconSize={20}
+  iconSize={22}
   gradientStops={[
     { offset: '0%', color: '#b57af9' },
     { offset: '30%', color: '#000000' },
@@ -191,13 +191,13 @@
 ```
 ```aura width=150 height=44 link="https://github.com/EshaanJaiswal" inline align=center
 <SocialMediaButton
-  icon="https://raw.githubusercontent.com/collectioneur/collectioneur/main/icons/github-icon.svg"
+  icon="https://github.githubassets.com/favicons/favicon.png"
   text="GitHub"
   width={150}
   height={44}
   backgroundColor="#000000"
   textColor="#ffffff"
-  iconSize={20}
+  iconSize={22}
   gradientStops={[
     { offset: '0%', color: '#818cf8' },
     { offset: '30%', color: '#000000' },
