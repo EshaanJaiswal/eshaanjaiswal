@@ -24,5 +24,5 @@
 ***
 
 <p align="center">
-<a href="https://eshaanjaiswal.github.io"><img src="./.github/assets/readme-aura-component-1-caaa55a9.svg" width="160" height="44" /></a><a href="https://github.com/EshaanJaiswal"><img src="./.github/assets/readme-aura-component-2-f29421e8.svg" width="150" height="44" /></a><a href="https://www.linkedin.com/in/eshaanjaiswal"><img src="./.github/assets/readme-aura-component-3-4e9d9cc2.svg" width="160" height="44" /></a>
+<a href="https://eshaanjaiswal.github.io"><img src="./.github/assets/readme-aura-component-1-c0f27a6d.svg" width="160" height="44" /></a><a href="https://github.com/EshaanJaiswal"><img src="./.github/assets/readme-aura-component-2-b7c09f76.svg" width="150" height="44" /></a><a href="https://www.linkedin.com/in/eshaanjaiswal"><img src="./.github/assets/readme-aura-component-3-4e9d9cc2.svg" width="160" height="44" /></a>
 </p>
