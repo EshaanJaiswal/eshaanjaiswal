@@ -128,7 +128,7 @@
       {github.user.bio || 'Computer Vision · Machine Learning · Systems'}
     </div>
     <div style={{ display: 'flex', gap: 8, marginTop: 6 }}>
-      {['Computer Vision', 'Machine Learning', 'Systems', 'C++'].map(function(tag) {
+      {['Machine Learning', 'Deep Learning', 'Systems', 'Computer Vision'].map(function(tag) {
         return (
           <div
             key={tag}
@@ -152,63 +152,6 @@
 </div>
 ```
 
-```aura width=160 height=44 link="https://eshaanjaiswal.github.io" inline align=center
-<SocialMediaButton
-  icon="https://cdn.simpleicons.org/googlechrome/ffffff"
-  text="Website"
-  width={160}
-  height={44}
-  backgroundColor="#000000"
-  textColor="#ffffff"
-  iconSize={20}
-  gradientStops={[
-    { offset: '0%', color: '#b57af9' },
-    { offset: '30%', color: '#000000' },
-    { offset: '60%', color: '#9d6bf0' },
-    { offset: '80%', color: '#000000' },
-    { offset: '100%', color: '#c89dfb' },
-  ]}
-/>
-```
-```aura width=150 height=44 link="https://github.com/EshaanJaiswal" inline align=center
-<SocialMediaButton
-  icon="https://cdn.simpleicons.org/github/ffffff"
-  text="GitHub"
-  width={150}
-  height={44}
-  backgroundColor="#000000"
-  textColor="#ffffff"
-  iconSize={20}
-  gradientStops={[
-    { offset: '0%', color: '#818cf8' },
-    { offset: '30%', color: '#000000' },
-    { offset: '60%', color: '#9298f8' },
-    { offset: '80%', color: '#000000' },
-    { offset: '100%', color: '#7479f5' },
-  ]}
-/>
-```
-```aura width=160 height=44 link="https://www.linkedin.com/in/eshaanjaiswal" inline align=center
-<SocialMediaButton
-  icon="https://cdn.simpleicons.org/linkedin/ffffff"
-  text="LinkedIn"
-  width={160}
-  height={44}
-  backgroundColor="#000000"
-  textColor="#ffffff"
-  iconSize={20}
-  gradientStops={[
-    { offset: '0%', color: '#5dc8f9' },
-    { offset: '30%', color: '#000000' },
-    { offset: '60%', color: '#7dd3fc' },
-    { offset: '80%', color: '#000000' },
-    { offset: '100%', color: '#4ec3f8' },
-  ]}
-/>
-```
-
----
-
 ## About
 - 2nd Year undergraduate in Computer Science and Engineering at IIT Gandhinagar.
 - Interests: Computer Vision, Deep Learning, Machine Learning, Computer Architecture, Systems, and Algorithmic Research.
@@ -228,44 +171,57 @@
 
 ---
 
-```aura width=900 height=160
-<>
-  <style>{`
-    @keyframes pulse {
-      0% { opacity: 0.55; }
-      50% { opacity: 1; }
-      100% { opacity: 0.55; }
-    }
-    #dot { animation: pulse 2.5s ease-in-out infinite; }
-  `}</style>
-  <div
-    style={{
-      width: 900,
-      height: 160,
-      borderRadius: 22,
-      overflow: 'hidden',
-      position: 'relative',
-      display: 'flex',
-      background: '#0f172a',
-      fontFamily: 'Inter, Arial, sans-serif',
-    }}
-  >
-    <svg width="900" height="160" viewBox="0 0 900 160" xmlns="http://www.w3.org/2000/svg">
-      <circle id="dot" cx="90" cy="80" r="8" fill="#22c55e" />
-    </svg>
-    <div
-      style={{
-        position: 'absolute',
-        left: 120,
-        top: 56,
-        display: 'flex',
-        flexDirection: 'column',
-      }}
-    >
-      <div style={{ color: '#e2e8f0', fontSize: 20, fontWeight: 600 }}>
-        Open to research and industry opportunities.
-      </div>
-    </div>
-  </div>
-</>
+```aura width=160 height=44 link="https://eshaanjaiswal.github.io" inline align=center
+<SocialMediaButton
+  icon="https://raw.githubusercontent.com/collectioneur/collectioneur/main/icons/chrome-icon.svg"
+  text="Website"
+  width={160}
+  height={44}
+  backgroundColor="#000000"
+  textColor="#ffffff"
+  iconSize={20}
+  gradientStops={[
+    { offset: '0%', color: '#b57af9' },
+    { offset: '30%', color: '#000000' },
+    { offset: '60%', color: '#9d6bf0' },
+    { offset: '80%', color: '#000000' },
+    { offset: '100%', color: '#c89dfb' },
+  ]}
+/>
+```
+```aura width=150 height=44 link="https://github.com/EshaanJaiswal" inline align=center
+<SocialMediaButton
+  icon="https://raw.githubusercontent.com/collectioneur/collectioneur/main/icons/github-icon.svg"
+  text="GitHub"
+  width={150}
+  height={44}
+  backgroundColor="#000000"
+  textColor="#ffffff"
+  iconSize={20}
+  gradientStops={[
+    { offset: '0%', color: '#818cf8' },
+    { offset: '30%', color: '#000000' },
+    { offset: '60%', color: '#9298f8' },
+    { offset: '80%', color: '#000000' },
+    { offset: '100%', color: '#7479f5' },
+  ]}
+/>
+```
+```aura width=160 height=44 link="https://www.linkedin.com/in/eshaanjaiswal" inline align=center
+<SocialMediaButton
+  icon="https://raw.githubusercontent.com/collectioneur/collectioneur/main/icons/linkedin-icon.png"
+  text="LinkedIn"
+  width={160}
+  height={44}
+  backgroundColor="#000000"
+  textColor="#ffffff"
+  iconSize={20}
+  gradientStops={[
+    { offset: '0%', color: '#5dc8f9' },
+    { offset: '30%', color: '#000000' },
+    { offset: '60%', color: '#7dd3fc' },
+    { offset: '80%', color: '#000000' },
+    { offset: '100%', color: '#4ec3f8' },
+  ]}
+/>
 ```
