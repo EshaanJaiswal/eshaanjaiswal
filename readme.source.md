@@ -2,20 +2,32 @@
 <>
   <style>{`
     @keyframes floatUp {
-      0% { transform: translateY(0px); opacity: 0.85; }
-      50% { transform: translateY(-10px); opacity: 1; }
-      100% { transform: translateY(0px); opacity: 0.85; }
+      0% { transform: translateY(0px); opacity: 0.75; }
+      50% { transform: translateY(-14px); opacity: 1; }
+      100% { transform: translateY(0px); opacity: 0.75; }
     }
-    @keyframes sweep {
-      0% { transform: translateX(-220px); opacity: 0; }
-      20% { opacity: 0.35; }
-      50% { opacity: 0.5; }
+    @keyframes drift {
+      0% { transform: translateX(0px) translateY(0px); opacity: 0.5; }
+      50% { transform: translateX(18px) translateY(-8px); opacity: 0.9; }
+      100% { transform: translateX(0px) translateY(0px); opacity: 0.5; }
+    }
+    @keyframes scan {
+      0% { transform: translateX(-260px); opacity: 0; }
+      20% { opacity: 0.4; }
+      50% { opacity: 0.6; }
       80% { opacity: 0.2; }
-      100% { transform: translateX(220px); opacity: 0; }
+      100% { transform: translateX(260px); opacity: 0; }
+    }
+    @keyframes shimmer {
+      0% { opacity: 0.15; }
+      50% { opacity: 0.45; }
+      100% { opacity: 0.15; }
     }
     #orb-1 { animation: floatUp 7s ease-in-out infinite; }
     #orb-2 { animation: floatUp 9s ease-in-out infinite reverse; }
-    #sweep { animation: sweep 6s linear infinite; }
+    #orb-3 { animation: drift 8s ease-in-out infinite; }
+    #scan { animation: scan 6s linear infinite; }
+    #shimmer { animation: shimmer 4s ease-in-out infinite; }
   `}</style>
   <div
     style={{
@@ -25,7 +37,7 @@
       overflow: 'hidden',
       position: 'relative',
       display: 'flex',
-      background: 'linear-gradient(135deg, #0b1220 0%, #111827 100%)',
+      background: 'radial-gradient(circle at 15% 20%, #1e3a8a 0%, #0b1220 38%, #0b1220 100%)',
       fontFamily: 'Inter, Arial, sans-serif',
     }}
   >
@@ -35,17 +47,29 @@
           <stop offset="0%" stopColor="#60a5fa" stopOpacity="0.7" />
           <stop offset="100%" stopColor="#1f2937" stopOpacity="0" />
         </radialGradient>
+        <radialGradient id="orb-warm" cx="50%" cy="50%" r="50%">
+          <stop offset="0%" stopColor="#f59e0b" stopOpacity="0.5" />
+          <stop offset="100%" stopColor="#111827" stopOpacity="0" />
+        </radialGradient>
         <linearGradient id="scan" x1="0" y1="0" x2="1" y2="0">
           <stop offset="0%" stopColor="#22d3ee" stopOpacity="0" />
           <stop offset="50%" stopColor="#22d3ee" stopOpacity="0.35" />
           <stop offset="100%" stopColor="#22d3ee" stopOpacity="0" />
         </linearGradient>
+        <linearGradient id="glow" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stopColor="#38bdf8" stopOpacity="0" />
+          <stop offset="45%" stopColor="#38bdf8" stopOpacity="0.25" />
+          <stop offset="100%" stopColor="#a5b4fc" stopOpacity="0" />
+        </linearGradient>
       </defs>
 
       <circle id="orb-1" cx="140" cy="90" r="120" fill="url(#orb)" />
       <circle id="orb-2" cx="760" cy="190" r="130" fill="url(#orb)" />
+      <circle id="orb-3" cx="520" cy="70" r="90" fill="url(#orb-warm)" />
 
-      <rect id="sweep" x="340" y="20" width="220" height="220" rx="24" fill="url(#scan)" />
+      <rect id="shimmer" x="0" y="0" width="900" height="260" fill="url(#glow)" />
+
+      <rect id="scan" x="320" y="18" width="260" height="224" rx="28" fill="url(#scan)" />
     </svg>
 
     <div
@@ -73,37 +97,40 @@
 
 ```aura width=160 height=44 link="https://eshaanjaiswal.github.io" inline align=center
 <SocialMediaButton
-  icon="https://cdn.simpleicons.org/googlechrome/ffffff"
+  icon="https://cdn.simpleicons.org/googlechrome/0b1220"
   text="Website"
   width={160}
   height={44}
-  backgroundColor="#0b4f6c"
-  textColor="#ffffff"
-  iconSize={20}
+  backgroundColor="#e2e8f0"
+  textColor="#0b1220"
+  iconSize={22}
+  borderColor="#cbd5f5"
   gradientStrokeWidth={2}
 />
 ```
 ```aura width=150 height=44 link="https://github.com/EshaanJaiswal" inline align=center
 <SocialMediaButton
-  icon="https://cdn.simpleicons.org/github/ffffff"
+  icon="https://cdn.simpleicons.org/github/0b1220"
   text="GitHub"
   width={150}
   height={44}
-  backgroundColor="#111827"
-  textColor="#ffffff"
-  iconSize={20}
+  backgroundColor="#e2e8f0"
+  textColor="#0b1220"
+  iconSize={22}
+  borderColor="#cbd5f5"
   gradientStrokeWidth={2}
 />
 ```
 ```aura width=160 height=44 link="https://www.linkedin.com/in/eshaanjaiswal" inline align=center
 <SocialMediaButton
-  icon="https://cdn.simpleicons.org/linkedin/ffffff"
+  icon="https://cdn.simpleicons.org/linkedin/0b1220"
   text="LinkedIn"
   width={160}
   height={44}
-  backgroundColor="#0a66c2"
-  textColor="#ffffff"
-  iconSize={20}
+  backgroundColor="#e2e8f0"
+  textColor="#0b1220"
+  iconSize={22}
+  borderColor="#cbd5f5"
   gradientStrokeWidth={2}
 />
 ```
