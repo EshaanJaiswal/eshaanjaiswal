@@ -17,40 +17,56 @@
     #orb-2 { animation: floatUp 9s ease-in-out infinite reverse; }
     #sweep { animation: sweep 6s linear infinite; }
   `}</style>
-  <svg width="900" height="260" viewBox="0 0 900 260" xmlns="http://www.w3.org/2000/svg">
-    <defs>
-      <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-        <stop offset="0%" stopColor="#0b1220" />
-        <stop offset="100%" stopColor="#111827" />
-      </linearGradient>
-      <radialGradient id="orb" cx="50%" cy="50%" r="50%">
-        <stop offset="0%" stopColor="#60a5fa" stopOpacity="0.7" />
-        <stop offset="100%" stopColor="#1f2937" stopOpacity="0" />
-      </radialGradient>
-      <linearGradient id="scan" x1="0" y1="0" x2="1" y2="0">
-        <stop offset="0%" stopColor="#22d3ee" stopOpacity="0" />
-        <stop offset="50%" stopColor="#22d3ee" stopOpacity="0.35" />
-        <stop offset="100%" stopColor="#22d3ee" stopOpacity="0" />
-      </linearGradient>
-    </defs>
+  <div
+    style={{
+      width: 900,
+      height: 260,
+      borderRadius: 24,
+      overflow: 'hidden',
+      position: 'relative',
+      background: 'linear-gradient(135deg, #0b1220 0%, #111827 100%)',
+      fontFamily: 'Inter, Arial, sans-serif',
+    }}
+  >
+    <svg width="900" height="260" viewBox="0 0 900 260" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <radialGradient id="orb" cx="50%" cy="50%" r="50%">
+          <stop offset="0%" stopColor="#60a5fa" stopOpacity="0.7" />
+          <stop offset="100%" stopColor="#1f2937" stopOpacity="0" />
+        </radialGradient>
+        <linearGradient id="scan" x1="0" y1="0" x2="1" y2="0">
+          <stop offset="0%" stopColor="#22d3ee" stopOpacity="0" />
+          <stop offset="50%" stopColor="#22d3ee" stopOpacity="0.35" />
+          <stop offset="100%" stopColor="#22d3ee" stopOpacity="0" />
+        </linearGradient>
+      </defs>
 
-    <rect width="900" height="260" rx="24" fill="url(#bg)" />
+      <circle id="orb-1" cx="140" cy="90" r="120" fill="url(#orb)" />
+      <circle id="orb-2" cx="760" cy="190" r="130" fill="url(#orb)" />
 
-    <circle id="orb-1" cx="140" cy="90" r="120" fill="url(#orb)" />
-    <circle id="orb-2" cx="760" cy="190" r="130" fill="url(#orb)" />
+      <rect id="sweep" x="340" y="20" width="220" height="220" rx="24" fill="url(#scan)" />
+    </svg>
 
-    <rect id="sweep" x="340" y="20" width="220" height="220" rx="24" fill="url(#scan)" />
-
-    <text x="70" y="120" fill="#f8fafc" fontSize="40" fontWeight="700" fontFamily="Inter, Arial, sans-serif">
-      Eshaan Jaiswal
-    </text>
-    <text x="70" y="158" fill="#94a3b8" fontSize="18" fontFamily="Inter, Arial, sans-serif">
-      Computer Vision | ML | Systems
-    </text>
-    <text x="70" y="195" fill="#cbd5f5" fontSize="14" fontFamily="Inter, Arial, sans-serif">
-      Research at CVIG Lab, IIT Gandhinagar
-    </text>
-  </svg>
+    <div
+      style={{
+        position: 'absolute',
+        left: 70,
+        top: 78,
+        display: 'flex',
+        flexDirection: 'column',
+      }}
+    >
+      <div style={{ color: '#f8fafc', fontSize: 40, fontWeight: 700, lineHeight: 1.1 }}>
+        Eshaan Jaiswal
+      </div>
+      <div style={{ color: '#94a3b8', fontSize: 18, marginTop: 10 }}>
+        Computer Vision | ML | Systems
+      </div>
+      <div style={{ color: '#cbd5f5', fontSize: 14, marginTop: 10 }}>
+        Research at CVIG Lab, IIT Gandhinagar
+      </div>
+    </div>
+  </div>
 </>
 ```
 
@@ -122,15 +138,36 @@
     }
     #dot { animation: pulse 2.5s ease-in-out infinite; }
   `}</style>
-  <svg width="900" height="160" viewBox="0 0 900 160" xmlns="http://www.w3.org/2000/svg">
-    <rect width="900" height="160" rx="22" fill="#0f172a" />
-    <circle id="dot" cx="90" cy="80" r="8" fill="#22c55e" />
-    <text x="120" y="88" fill="#e2e8f0" fontSize="20" fontWeight="600" fontFamily="Inter, Arial, sans-serif">
-      Currently exploring motion dynamics in generative models
-    </text>
-    <text x="120" y="114" fill="#94a3b8" fontSize="14" fontFamily="Inter, Arial, sans-serif">
-      Always open to research collaborations and interesting problems.
-    </text>
-  </svg>
+  <div
+    style={{
+      width: 900,
+      height: 160,
+      borderRadius: 22,
+      overflow: 'hidden',
+      position: 'relative',
+      background: '#0f172a',
+      fontFamily: 'Inter, Arial, sans-serif',
+    }}
+  >
+    <svg width="900" height="160" viewBox="0 0 900 160" xmlns="http://www.w3.org/2000/svg">
+      <circle id="dot" cx="90" cy="80" r="8" fill="#22c55e" />
+    </svg>
+    <div
+      style={{
+        position: 'absolute',
+        left: 120,
+        top: 56,
+        display: 'flex',
+        flexDirection: 'column',
+      }}
+    >
+      <div style={{ color: '#e2e8f0', fontSize: 20, fontWeight: 600 }}>
+        Currently exploring motion dynamics in generative models
+      </div>
+      <div style={{ color: '#94a3b8', fontSize: 14, marginTop: 8 }}>
+        Always open to research collaborations and interesting problems.
+      </div>
+    </div>
+  </div>
 </>
 ```
